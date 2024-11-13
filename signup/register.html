@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <form class="form">
+        <h1>Sign Up</h1>
+
+        <div class="two-cell">
+            <input type="text" placeholder="First Name"/>
+            <input type="text" placeholder="Last Name"/>
+        </div>
+
+        <input type="email" placeholder="Email" required/>
+        <input type="text" placeholder="Username" required/>
+
+        <div class="two-cell">
+            <div class="input-wrapper">
+                <input id="password" type="password" placeholder="Password" />
+                <button class="btn-show" type="button" onclick="switchPasswordType('password','passIcon')">
+                    <i id="passIcon" class="fi fi-rs-eye"></i>
+                </button>
+            </div>
+            
+            <div class="input-wrapper">
+                <input id="checkpassword" type="password" placeholder="Confirm password" />
+                <button class="btn-show" type="button" onclick="switchPasswordType('checkpassword','passIcon1')">
+                    <i id="passIcon1" class="fi fi-rs-eye"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="BG">
+            <div class="label">
+                <label for="date"> Birthday:</label>
+                <input id="date" type="date" />
+            </div>    
+
+            <div class="label">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender"  required>
+                    <option value="" disabled selected>Genre</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>  
+        </div>      
+
+        <div class="condition">
+            <input id='condition' type="checkbox" required/>
+            <label for="condition"> Agree to terms and services</label>
+        </div>
+
+        <button id="sign" type="submit">Sign Up</button>
+    <!-- <a class="link-sign" href="/register.html">Sign up</a> -->
+   </form>
+   <script src="script.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+</html> 
